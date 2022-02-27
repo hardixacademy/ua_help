@@ -290,7 +290,7 @@ const Home = () => {
 
 					<span>Support the Ukrainian Army:</span>
 					<p>
-						UAH:
+						<span>UAH:</span>
 						<br />
 						Bank: National Bank of Ukraine
 						<br />
@@ -303,7 +303,7 @@ const Home = () => {
 						Recipient: National Bank of Ukraine
 						<br />
 						<br />
-						USD:
+						<span>USD:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -318,7 +318,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						GBP:
+						<span>GBP:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -333,7 +333,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						EUR:
+						<span>EUR:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -350,7 +350,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						CHF:
+						<span>CHF:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -366,7 +366,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						AUD:
+						<span>AUD:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -381,7 +381,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						CNY:
+						<span>CNY:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -396,7 +396,7 @@ const Home = () => {
 						Crediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						CAD:
+						<span>CAD:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -409,7 +409,7 @@ const Home = () => {
 						100 King Street West, 24th Floor, Toronto, Ontario, M5X 1A1, CanadaCrediting to the account UA843000010000000047330992708
 						<br />
 						<br />
-						JPY:
+						<span>JPY:</span>
 						<br />
 						SWIFT Code NBU: NBUA UA UX
 						<br />
@@ -427,55 +427,55 @@ const Home = () => {
 
 					<span>Refugee Aid Accounts (Crypto):</span>
 					<p>
-						1. ETH ERC20: <br />
+						<span>1. ETH ERC20: </span> <br />
 						0x1508ddb152ef0fbe2a97e39dae61b45ed82c0b64
 						<br />
 						<br />
-						2. BTC:
+						<span>2. BTC:</span>
 						<br />
 						333qoEF11PBd9pV52c9ubWAkZHQLoaub9U
 						<br />
 						<br />
-						3. USDT ERC20:
+						<span>3. USDT ERC20:</span>
 						<br />
 						0x1508ddb152ef0fbe2a97e39dae61b45ed82c0b64
 						<br />
 						<br />
-						4. USDT TRC:
+						<span>4. USDT TRC:</span>
 						<br />
 						TC4EsXgyPJVBsaRMErXMXVRBEfg96Xym4R
 						<br />
 						<br />
-						5. USDT OMNI:
+						<span>5. USDT OMNI:</span>
 						<br />
 						3FVt6XZHaCtAGyZWXpUw1jGg3G9J8Gbd2k
 					</p>
 					<span>Bank Accounts:</span>
 					<p>
-						1. EUR account:
+						<span>1. EUR account:</span>
 						<br />
 						PL35 1090 1014 0000 0001 4982 1914
 						<br />
 						<br />
-						2. PLN account:
+						<span>2. PLN account:</span>
 						<br />
 						PL02 1090 1014 0000 0001 4982 1926
 						<br />
 						<br />
-						3. PLN account:
+						<span>3. PLN account:</span>
 						<br />
 						PL66 1090 1014 0000 0001 4982 1065
 						<br />
 						<br />
-						4. EUR account:
+						<span>4. EUR account:</span>
 						<br />
 						PL11 1090 1014 0000 0001 4982 1085
 						<br />
 						<br />
-						5. SWIFT: WBK PP LPP
+						<span>5. SWIFT: WBK PP LPP</span>
 						<br />
 						<br />
-						6. ADRES: Al.Jana Pawła ll 17, Warsaw , Poland ,00-195
+						<span>6. ADRES:</span> Al.Jana Pawła ll 17, Warsaw , Poland ,00-195
 					</p>
 					<span>Fund data:</span>
 					<p>
