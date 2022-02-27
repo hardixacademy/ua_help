@@ -17,8 +17,7 @@ const Home = () => {
 				<title>Help people arriving in Poland from Ukraine</title>
 				<meta
 					name='description'
-					content='Мы знаем, что жители России в какой-то мере не понимают, что тут происходит, и обращаемся к вам с данной информацией. Ваша пропаганда не знает
-							границ в искажении фактов, подмене фактов и понятий во имя каких-то непонятных имперских целей и настроений руководства вашей страны.'
+					content='Citizens of Europe, the leadership of the Russian Federation, represented by President Putin, launched a full-scale war against Ukraine on February 24, 2022 at 5:00 am.'
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
@@ -27,36 +26,39 @@ const Home = () => {
 				<div className={styles.hero}>
 					<h1 className={styles.title}>
 						<span>
-							Россияне, руководство вашей страны в лице президента Путина начало полномасштабную Войну против Украины 24 февраля 2022 года в 5:00 утра.
+							Citizens of Europe, the leadership of the Russian Federation, represented by President Putin, launched a full-scale war against Ukraine on
+							February 24, 2022 at 5:00 am.{' '}
 						</span>
 					</h1>
 					<p className={styles.paragraph}>
-						Мы, украинцы, не хотим с вами воевать, <span>мы защищаем СВОЮ землю!</span> Уже 30 лет Украина — это независимая страна, а мы — счастливый и честный
-						народ, который сам, если нужно, борется за свои права, нам не нужна помощь вашей «мирной армии», <span>нас НЕ НУЖНО спасать!</span>
+						The morning in the Ukrainian cities on February 24 began with massive missile attacks on all strategic facilities in all major cities of the
+						country. <span>Families and children woke up from explosions!</span> It's hard to describe in words.The attack has been going on for more than 3
+						days and it doesn't seem to end anytime soon. The population is trying to escape, people are hiding in basements, someone is leaving, leaving their
+						homes and their history, <span>someone does not know what to do…</span>
 					</p>
 
 					<div className={styles.row__quote}>
 						<img src='/quote.svg' alt='quote' />
 						<p className={cx([styles.paragraph, styles.quote])}>
-							Мы знаем, что жители России в какой-то мере не понимают, что тут происходит, и обращаемся к вам с данной информацией. Ваша пропаганда не знает
-							границ в искажении фактов, подмене фактов и понятий во имя каких-то непонятных имперских целей и настроений руководства вашей страны.
+							For 30 years now, Ukraine has been an independent country, and we are a happy and honest people who, if necessary, will fight for their rights, we
+							don’t need the help of someone’s “peaceful army”, we DO NOT NEED to be saved by them!
 						</p>
 					</div>
 					<a href='#money' className={styles.button}>
-						Помочь украинцам!
+						Help Ukrainians!
 					</a>
 
 					<img className={styles.hero__arrow} src='https://img.icons8.com/dotty/80/000000/double-down.png' />
 				</div>
 
 				<div className={styles.before}>
-					<h1 className={styles.title}>Киев до нападения выглядел так:</h1>
+					<h1 className={styles.title}>A month ago Kyiv looked like this:</h1>
 					<img src='/kyiv_before.jpg' alt='kyiv_before' />
 				</div>
 
 				<div className={styles.after}>
 					<h1 className={styles.title}>
-						<span>Теперь столица Украины выглядит так:</span>
+						<span>Now the capital of Ukraine looks like this:</span>
 						<div className={styles.row}>
 							{images.map((key) => (
 								<div key={key} onClick={() => setImg(key)} className={styles.cover}>
@@ -80,14 +82,16 @@ const Home = () => {
 
 				<div className={styles.text}>
 					<h1 className={styles.title}>
-						<span>ЭТО ВОЙНА!</span> <br />
-						Война Российской власти против украинского мирного населения! <br />
-						Мы, украинцы, не хотим с вами воевать, мы защищаем СВОЮ землю!
+						<span>THIS IS WAR!</span> <br />
+						We, Ukrainians, we defend OUR land!
 					</h1>
-					<p className={styles.paragraph}>
-						Уже 30 лет Украина — это независимая страна, а мы — счастливый и честный народ, который сам, если нужно, борется за свои права, нам не нужна помощь
-						вашей «мирной армии», <span>нас НЕ НУЖНО спасать!</span>
-					</p>
+					<div className={styles.row__quote}>
+						<img src='/quote.svg' alt='quote' />
+						<p className={cx([styles.paragraph, styles.quote])}>
+							Russian soldiers came to our land, we didn't come to them. Our soldiers are determined to fight to the last, but the Russians do not share our
+							mood. We want to stop this senseless and insane slaughter.
+						</p>
+					</div>
 				</div>
 
 				<div className={styles.after}>
@@ -125,26 +129,43 @@ const Home = () => {
 					</div>
 				)}
 
-				<div
-				// className={styles.invasion}
-				>
-					<h1 className={styles.title}>
-						Мы с вами соседи и имеем общую историю в прошлом и настоящем. Мы хотим, чтобы вы знали, что мы защищаемся от агрессии ваших войск, а не наоборот!
-					</h1>
+				<div className={styles.text}>
+					<h1 className={styles.title}>Don’t stay aside! Help us to save one's life in Ukraine!</h1>
 
 					<div className={styles.row__quote}>
 						<img src='/quote.svg' alt='quote' />
 						<p className={cx([styles.paragraph, styles.quote])}>
-							Ваши солдаты пришли на нашу землю, а не мы к вам. Наши воины настроены бороться до последнего, а у ваших такого настроения нет. Мы хотим
-							прекратить эту бессмысленную и безумную мясорубку.
+							The invasion of Putin’s army into Ukraine and direct attack on its sovereignty keeps on bringing suffering to peaceful people, devastation in
+							Ukrainian cities and death of children and civilians. The 24th of February will never be forgotten, and all heroes of Ukraine will remain in our
+							hearts forever!
 						</p>
 					</div>
 
 					<p className={styles.paragraph}>
-						Утро в наших городах 24 февраля началось с массовых ракетных ударов по всем стратегическим объектам во всех больших городах страны. Семьи и дети
-						проснулись от взрывов! Это сложно описать словами. Атака продолжается уже больше суток, и нам кажется это надолго. Наше население пытается
-						спасаться, люди прячутся в подвалах, кто-то уезжает, оставляя свои дома и свою историю, кто-то не знает, что делать…
+						We know that you feel our pain because you know Ukrainians, who are your friends, colleagues, neighbours or even part of your family. We as
+						Ukrainians have no words to describe how grateful we are for your support! We rely on each one of you!
+						<br />
+						<br />
+						We are collecting donations from all over the world to support the Ukrainian army and refugees, who bravely fight for Ukraine and for peace in the
+						European Union. The war that Putin started in Ukraine is a threat for the whole world, his regime is based on aggression, devastation, and death.
+						<br />
+						<br />
+						Right now, Ukrainians do their best to stand up against 2 enemies right now in many regions simultaneously - military forces with heavy ammunition
+						led by Putin and Lukashenko. Our defenders of Ukraine are in constant need of more equipment, vests, knee pads, food, hygiene necessities.
+						Meanwhile, women are giving birth to the babies in the Kyiv underground, where hygienical agents and medical equipment is not an abundance anymore.
+						During war there are always shortages. Our goal is to collect funds and provide these necessities for Ukrainian refugees and the Ukrainian Army.
+						<br />
+						<br />
+						We are your neighbours, we share the same values, we have a common history. We count on your support! Every piece of support matters! Stand with
+						Ukraine!
+						<br />
+						<br />
+						Slava Ukraini!
 					</p>
+
+					<a href='#money' className={styles.button}>
+						Help Ukrainians!
+					</a>
 				</div>
 
 				<div className={styles.videos}>
@@ -258,16 +279,153 @@ const Home = () => {
 				</div>
 
 				<div id='money' className={styles.money}>
-					<h1 className={styles.title}>Реквизиты для помощи</h1>
+					<h1 className={styles.title}>Requisites for help</h1>
 
 					<h1 className={styles.proof}>
-						Подтверждения нашей работы можно увидеть{' '}
+						You can see the proof of our work{' '}
 						<a target='_blank' href='https://instagram.com/fenix_fundacja?utm_medium=copy_link' rel='noreferrer'>
-							здесь!
+							here!
 						</a>
 					</h1>
 
-					<span>Криптовалютные счета:</span>
+					<span>Support the Ukrainian Army:</span>
+					<p>
+						UAH:
+						<br />
+						Bank: National Bank of Ukraine
+						<br />
+						MFI 300001
+						<br />
+						Account № UA843000010000000047330992708
+						<br />
+						USREOU code 00032106
+						<br />
+						Recipient: National Bank of Ukraine
+						<br />
+						<br />
+						USD:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						JP MORGAN CHASE BANK, New York
+						<br />
+						SWIFT Code: CHASUS33
+						<br />
+						Account: 400807238
+						<br />
+						383 Madison Avenue, New York, NY 10179, USA
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						GBP:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						Bank of England, London
+						<br />
+						SWIFT Code: BKENGB2L
+						<br />
+						Account: 40000982
+						<br />
+						Threadneedle Street, London EC2R 8AH, UK
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						EUR:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						DEUTSCHE BUNDESBANK, Frankfurt
+						<br />
+						SWIFT Code: MARKDEFF
+						<br />
+						Account: 5040040066
+						<br />
+						IBAN DE05504000005040040066
+						<br />
+						Wilhelm-Epsteinn-Strabe 14, 60431 Frankfurt Am Main, Germany
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						CHF:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						ZURCHER KANTONALBANK, ZURICH
+						<br />
+						SWIFT Code: ZKBKCHZZ80A
+						<br />
+						Account: 0700-01227572
+						<br />
+						IBAN CH32 0070 0070 0012 2757 2<br />
+						Josefstrasse 222, 8005 Zurich, Switzerland
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						AUD:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						RESERVE BANK OF AUSTRALIA, Sydney
+						<br />
+						SWIFT Code: RSBKAU2S
+						<br />
+						Account: 81753-2
+						<br />
+						GPO Box 3947, Sydney NSW 2000, Australia
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						CNY:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						STANDARD CHARTERED BANK, Hong Kong
+						<br />
+						SWIFT Code: SCBLHKHH
+						<br />
+						Account: 447-0-946243-6
+						<br />
+						GPO Box 21, Hong Kong
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						CAD:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						BANK OF MONTREAL, Toronto
+						<br />
+						SWIFT Code: BOFMCAM2
+						<br />
+						Account: 3144-1044-166
+						<br />
+						100 King Street West, 24th Floor, Toronto, Ontario, M5X 1A1, CanadaCrediting to the account UA843000010000000047330992708
+						<br />
+						<br />
+						JPY:
+						<br />
+						SWIFT Code NBU: NBUA UA UX
+						<br />
+						MUFG BANK LTD, Tokyo
+						<br />
+						SWIFT Code: BOTK JP JT
+						<br />
+						Account: 653-0430048
+						<br />
+						1-2-3, Nihombashi HONGOKU-CHO, Chuo-ku, Tokyo 1003 -0021 Japan
+						<br />
+						Crediting to the account UA843000010000000047330992708
+						<br />
+					</p>
+
+					<span>Refugee Aid Accounts (Crypto):</span>
 					<p>
 						1. ETH ERC20: <br />
 						0x1508ddb152ef0fbe2a97e39dae61b45ed82c0b64
@@ -292,24 +450,24 @@ const Home = () => {
 						<br />
 						3FVt6XZHaCtAGyZWXpUw1jGg3G9J8Gbd2k
 					</p>
-					<span>Банковские счета:</span>
+					<span>Bank Accounts:</span>
 					<p>
-						1. EUR счёт:
+						1. EUR account:
 						<br />
 						PL35 1090 1014 0000 0001 4982 1914
 						<br />
 						<br />
-						2. PLN счет:
+						2. PLN account:
 						<br />
 						PL02 1090 1014 0000 0001 4982 1926
 						<br />
 						<br />
-						3. PLN счёт:
+						3. PLN account:
 						<br />
 						PL66 1090 1014 0000 0001 4982 1065
 						<br />
 						<br />
-						4. EUR счет:
+						4. EUR account:
 						<br />
 						PL11 1090 1014 0000 0001 4982 1085
 						<br />
@@ -319,7 +477,7 @@ const Home = () => {
 						<br />
 						6. ADRES: Al.Jana Pawła ll 17, Warsaw , Poland ,00-195
 					</p>
-					<span>Данные фонда:</span>
+					<span>Fund data:</span>
 					<p>
 						Fundacja FENIX
 						<br />
