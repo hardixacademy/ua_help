@@ -291,7 +291,9 @@ const Home = () => {
 					<span>Support the Ukrainian Army:</span>
 					<p>
 						<span>
-							<a href='https://www.portmone.com.ua/r3/uk/terminal/index/index/id/118103?item_name=Підтримуємо%20Українську%20Армію!%20(єПідтримка)&item_id=118103&item_category=Податки%2C%20платежі%20до%20бюджету&item_category2=1100&item_list_name=Catalog&index=3'>
+							<a
+								target='blank'
+								href='https://www.portmone.com.ua/r3/uk/terminal/index/index/id/118103?item_name=Підтримуємо%20Українську%20Армію!%20(єПідтримка)&item_id=118103&item_category=Податки%2C%20платежі%20до%20бюджету&item_category2=1100&item_list_name=Catalog&index=3'>
 								Transfer via card
 							</a>
 						</span>
