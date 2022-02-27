@@ -294,7 +294,7 @@ const Home = () => {
 
 					<h1 style={{ maxWidth: 550 }} className={styles.proof}>
 						If you have additional questions or would like to see proof of our work, please write{' '}
-						<a target='_blank' href='https://instagram.com/fenix_fundacja?utm_medium=copy_link' rel='noreferrer'>
+						<a target='_blank' href='https://www.instagram.com/fenix_foundation_for_ukraine/?utm_medium=copy_link' rel='noreferrer'>
 							here!
 						</a>
 					</h1>
