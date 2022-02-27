@@ -259,6 +259,14 @@ const Home = () => {
 
 				<div id='money' className={styles.money}>
 					<h1 className={styles.title}>Реквизиты для помощи</h1>
+
+					<h1 className={styles.proof}>
+						Подтверждения нашей работы можно увидеть{' '}
+						<a target='_blank' href='https://instagram.com/fenix_fundacja?utm_medium=copy_link' rel='noreferrer'>
+							здесь!
+						</a>
+					</h1>
+
 					<span>Криптовалютные счета:</span>
 					<p>
 						1. ETH ERC20: <br />
