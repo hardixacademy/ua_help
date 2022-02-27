@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  reverse-proxy:
+    container_name: traefik
+    image: traefik
+    ports:
+      - "80:80"
+      - "443:443"
+    command:
+      - "--configFile=/traefik.yml"
+    volumes:
+      - "./traefik.yml:/traefik.yml"
+      - "/home/ec2-user/certs:/certs"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+  prod-front:
+    build: .
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api.rule=Host(`support-ua.eu`)"
+      - "traefik.http.routers.api.tls.certresolver=le"
