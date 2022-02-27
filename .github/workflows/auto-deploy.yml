@@ -1,31 +1,32 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Deploy to Amazon EC2
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
-  build:
-
+  deploy:
+    name: Deploying productions
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    if: github.ref == 'refs/heads/main'
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
       with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+        host: 54.93.207.108
+        username: ec2-user
+        password: grow87654321
+        port: 22
+        script: |
+          sudo rm -rf -f /home/ec2-user/app/ua_help
+          sudo rm -rf -f /home/ec2-user/certs
+          cd /home/ec2-user/app
+          git clone https://github.com/hardixacademy/ua_help.git
+          cd /home/ec2-user/app/ua_help
+          git checkout main
+          git pull
+          sudo docker-compose stop
+          sudo docker-compose rm -f
+          sudo docker-compose build
+          sudo docker-compose up -d
