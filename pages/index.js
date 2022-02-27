@@ -281,8 +281,8 @@ const Home = () => {
 				<div id='money' className={styles.money}>
 					<h1 className={styles.title}>Requisites for help</h1>
 
-					<h1 className={styles.proof}>
-						You can see the proof of our work{' '}
+					<h1 style={{ maxWidth: 550 }} className={styles.proof}>
+						If you have additional questions or would like to see proof of our work, please write{' '}
 						<a target='_blank' href='https://instagram.com/fenix_fundacja?utm_medium=copy_link' rel='noreferrer'>
 							here!
 						</a>
