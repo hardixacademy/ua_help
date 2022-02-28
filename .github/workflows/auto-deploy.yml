@@ -20,7 +20,6 @@ jobs:
         port: 22
         script: |
           sudo rm -rf -f /home/ec2-user/app/ua_help
-          sudo rm -rf -f /home/ec2-user/app/certs
           cd /home/ec2-user/app
           git clone https://github.com/hardixacademy/ua_help.git
           cd /home/ec2-user/app/ua_help
