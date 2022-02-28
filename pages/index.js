@@ -32,12 +32,13 @@ const Home = () => {
 					</h1>
 					<p className={styles.paragraph}>
 						The morning in the Ukrainian cities on February 24 began with massive missile attacks on all strategic facilities in all major cities of the
-						country. <span>Families and children woke up from explosions!</span> It's hard to describe in words.The attack has been going on for more than 3
-						days and it doesn't seem to end anytime soon. The population is trying to escape, people are hiding in basements, someone is leaving, leaving their
+						country. <span>Families and children woke up from explosions!</span> It’s hard to describe in words.The attack has been going on for more than 3
+						days and it doesn’t seem to end anytime soon. The population is trying to escape, people are hiding in basements, someone is leaving, leaving their
 						homes and their history, <span>someone does not know what to do…</span>
 					</p>
 
 					<div className={styles.row__quote}>
+						{/* eslint-disable-next-line */}
 						<img src='/quote.svg' alt='quote' />
 						<p className={cx([styles.paragraph, styles.quote])}>
 							For 30 years now, Ukraine has been an independent country, and we are a happy and honest people who, if necessary, will fight for their rights, we
@@ -47,12 +48,13 @@ const Home = () => {
 					<a href='#money' className={styles.button}>
 						Help Ukrainians!
 					</a>
-
+					{/* eslint-disable-next-line */}
 					<img className={styles.hero__arrow} src='https://img.icons8.com/dotty/80/000000/double-down.png' />
 				</div>
 
 				<div className={styles.before}>
 					<h1 className={styles.title}>A month ago Kyiv looked like this:</h1>
+					{/* eslint-disable-next-line */}
 					<img src='/kyiv_before.jpg' alt='kyiv_before' />
 				</div>
 
@@ -62,6 +64,7 @@ const Home = () => {
 						<div className={styles.row}>
 							{images.map((key) => (
 								<div key={key} onClick={() => setImg(key)} className={styles.cover}>
+									{/* eslint-disable-next-line */}
 									<img src={`/${key}.jpg`} alt={`kyiv_in_war_${key}`} />
 								</div>
 							))}
@@ -75,6 +78,7 @@ const Home = () => {
 							<div className={styles.popup__close} onClick={() => setImg(null)}>
 								<span>X</span>
 							</div>
+							{/* eslint-disable-next-line */}
 							<img src={`/${img}.jpg`} alt={`kyiv_in_war_${img}`} />
 						</div>
 					</div>
@@ -86,9 +90,10 @@ const Home = () => {
 						We, Ukrainians, we defend OUR land!
 					</h1>
 					<div className={styles.row__quote}>
+						{/* eslint-disable-next-line */}
 						<img src='/quote.svg' alt='quote' />
 						<p className={cx([styles.paragraph, styles.quote])}>
-							Russian soldiers came to our land, we didn't come to them. Our soldiers are determined to fight to the last, but the Russians do not share our
+							Russian soldiers came to our land, we didn’t come to them. Our soldiers are determined to fight to the last, but the Russians do not share our
 							mood. We want to stop this senseless and insane slaughter.
 						</p>
 					</div>
@@ -98,21 +103,25 @@ const Home = () => {
 					<div className={styles.row}>
 						{images2.slice(0, 6).map((key) => (
 							<div key={key} onClick={() => setImg2(key)} className={styles.cover}>
+								{/* eslint-disable-next-line */}
 								<img src={`/${key}.webp`} alt={`kyiv_in_war_${key}`} />
 							</div>
 						))}
 
 						<div onClick={() => setImg2(26)} className={cx([styles.cover, styles.big])}>
+							{/* eslint-disable-next-line */}
 							<img src={`/26.webp`} alt={`kyiv_in_war_26`} />
 						</div>
 
 						{images2.slice(6, 12).map((key) => (
 							<div key={key} onClick={() => setImg2(key)} className={styles.cover}>
+								{/* eslint-disable-next-line */}
 								<img src={`/${key}.webp`} alt={`kyiv_in_war_${key}`} />
 							</div>
 						))}
 
 						<div onClick={() => setImg2(17)} className={cx([styles.cover, styles.big])}>
+							{/* eslint-disable-next-line */}
 							<img src={`/17.webp`} alt={`kyiv_in_war_17`} />
 						</div>
 					</div>
@@ -124,15 +133,17 @@ const Home = () => {
 							<div className={styles.popup__close} onClick={() => setImg2(null)}>
 								<span>X</span>
 							</div>
+							{/* eslint-disable-next-line */}
 							<img src={`/${img2}.webp`} alt={`kyiv_in_war_${img2}`} />
 						</div>
 					</div>
 				)}
 
 				<div className={styles.text}>
-					<h1 className={styles.title}>Don’t stay aside! Help us to save one's life in Ukraine!</h1>
+					<h1 className={styles.title}>Don’t stay aside! Help us to save one’s life in Ukraine!</h1>
 
 					<div className={styles.row__quote}>
+						{/* eslint-disable-next-line */}
 						<img src='/quote.svg' alt='quote' />
 						<p className={cx([styles.paragraph, styles.quote])}>
 							The invasion of Putin’s army into Ukraine and direct attack on its sovereignty keeps on bringing suffering to peaceful people, devastation in
@@ -283,13 +294,21 @@ const Home = () => {
 
 					<h1 style={{ maxWidth: 550 }} className={styles.proof}>
 						If you have additional questions or would like to see proof of our work, please write{' '}
-						<a target='_blank' href='https://instagram.com/fenix_fundacja?utm_medium=copy_link' rel='noreferrer'>
+						<a target='_blank' href='https://www.instagram.com/fenix_foundation_for_ukraine/?utm_medium=copy_link' rel='noreferrer'>
 							here!
 						</a>
 					</h1>
 
 					<span>Support the Ukrainian Army:</span>
 					<p>
+						<span>
+							<a
+								target='blank'
+								href='https://www.portmone.com.ua/r3/uk/terminal/index/index/id/118103?item_name=Підтримуємо%20Українську%20Армію!%20(єПідтримка)&item_id=118103&item_category=Податки%2C%20платежі%20до%20бюджету&item_category2=1100&item_list_name=Catalog&index=3'>
+								Transfer via card
+							</a>
+						</span>
+						<br /> <br />
 						<span>UAH:</span>
 						<br />
 						Bank: National Bank of Ukraine
