@@ -16,5 +16,5 @@ services:
     build: .
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.api.rule=Host(`support-ua.eu`)"
+      - "traefik.http.routers.api.rule=Host(`ukraine-support.eu`)"
       - "traefik.http.routers.api.tls.certresolver=le"
