@@ -17,7 +17,7 @@ const Home = () => {
 				<title>Help people arriving in Poland from Ukraine</title>
 				<meta
 					name='description'
-					content='Citizens of Europe, the leadership of the Russian Federation, represented by President Putin, launched a full-scale war against Ukraine on February 24, 2022 at 5:00 am.'
+					content='The morning in the Ukrainian cities on February 24 began with massive missile attacks on all strategic facilities in all major cities of the country. Families and children woke up from explosions! It’s hard to describe in words.The attack has been going on for more than 3 days and it doesn’t seem to end anytime soon. The population is trying to escape, people are hiding in basements, someone is leaving, leaving their homes and their history, someone does not know what to do…'
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
