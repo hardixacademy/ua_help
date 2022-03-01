@@ -132,8 +132,12 @@
   min-height: calc(100vh - 30px);
   flex: 1;
   position: relative;
-  padding-top: 15%;
+  padding-top: 10%;
   z-index: 2;
+
+  @media screen and (max-height:  889px) {
+    padding-top: 10px;
+  }
 
   @media screen and (max-width: 1023px) {
     padding-top: 0px;
@@ -155,7 +159,7 @@
       display: none;
     }
 
-    @media screen and (max-height:  795px) {
+    @media screen and (max-height:  770px) {
       display: none;
     }
   }
@@ -319,6 +323,8 @@
   iframe {
     border-radius: 10px;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    background: #eee;
+    border: 1px solid rgb(181, 181, 181);
   }
 
   .col {
